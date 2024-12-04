@@ -1,0 +1,9 @@
+---
+version: "3"
+services:
+  xc-audit:
+    build:
+      context: . 
+    container_name: xc-audit-api
+    ports:
+      - 8000:8000
