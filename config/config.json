@@ -8,7 +8,7 @@
         "app": {
             "type": "python 3",
             "path": "/var/www/app/",
-            "module": "app",
+            "module": "main",
             "working_directory": "/var/www/app",
             "callable": "app"
         }
