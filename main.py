@@ -7,7 +7,7 @@ from xc_objects import XC_Tenant
 app = FastAPI()
 
 origins = [
-    "http://10.1.1.4:8080",
+    "*",
 ]
 
 app.add_middleware(
