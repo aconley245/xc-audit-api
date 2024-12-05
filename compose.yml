@@ -7,3 +7,4 @@ services:
     container_name: xc-audit-api
     ports:
       - 8000:8000
+    restart: unless-stopped
