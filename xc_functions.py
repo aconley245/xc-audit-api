@@ -8,6 +8,7 @@ class XC_Functions:
         for loadbalancer in queried_namespace.get_loadbalancers():
             queried_lb = XC_HTTP_LB(namespace=namespace, name=loadbalancer["name"], tenant=tenant, auth=auth)
             loadbalancer["app_firewall"]=queried_lb.get_waf_policy()
+            loadbalancer["waf_exclusions"]=queried_lb.get_waf_exclusions()
             loadbalancers.append(loadbalancer)
         return loadbalancers
     
